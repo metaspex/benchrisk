@@ -12,7 +12,7 @@
 
 // For the Foundation Ontology generic matrix type.
 #include <hx2a/components/matrix.hpp>
-// For the Foundation Ontology completely list of ISO 4217 currencies.
+// For the Foundation Ontology complete list of ISO 4217 currencies.
 #include <hx2a/components/currency.hpp>
 
 using namespace std;
