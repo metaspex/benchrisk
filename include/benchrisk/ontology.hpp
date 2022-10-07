@@ -111,8 +111,6 @@ namespace benchrisk {
     void make(size_t rowsn, size_t colsn);
     
   private:
-
-    // Metaspex's Foundation Ontology contains all currencies of the world, as defined by ISO 4217 standard.
     slot<currency::code, "c"> _currency;
     slot<unsigned int, "s">   _sequence_number;
     slot<string, "a">         _application;
