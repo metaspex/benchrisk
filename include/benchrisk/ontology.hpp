@@ -72,41 +72,23 @@ namespace benchrisk {
 		time_t ed
 		);
 
-    size_type get_rows_size() const {
-      return _matrix.get()->get_rows_size();
-    }
+    size_type get_rows_size() const { return _matrix.get()->get_rows_size(); }
 
-    size_type get_columns_size() const {
-      return _matrix.get()->get_columns_size();
-    }
+    size_type get_columns_size() const { return _matrix.get()->get_columns_size(); }
 
-    currency::code get_currency() const {
-      return _currency;
-    }
+    currency::code get_currency() const { return _currency; }
 
-    const currency::info* get_currency_info() const {
-      return currency::get_info(_currency);
-    }
+    const currency::info* get_currency_info() const { return currency::get_info(_currency); }
 
-    unsigned int get_sequence_number() const {
-      return _sequence_number;
-    }
+    unsigned int get_sequence_number() const { return _sequence_number; }
 
-    string get_application() const {
-      return _application;
-    }
+    string get_application() const { return _application; }
 
-    time_t get_expiry_date() const {
-      return _expiry_date;
-    }
+    time_t get_expiry_date() const { return _expiry_date; }
 
-    time_t get_computation_start_timestamp() const {
-      return _computation_start_timestamp;
-    }
+    time_t get_computation_start_timestamp() const { return _computation_start_timestamp; }
 
-    matrix_r get_matrix() const {
-      return *_matrix.get();
-    }
+    matrix_r get_matrix() const { return *_matrix.get(); }
 
     void make(size_t rowsn, size_t colsn);
     
@@ -120,8 +102,7 @@ namespace benchrisk {
     slot_vector<string, "E">  _extra_keys;
     own<matrix_type, "r">     _matrix;
   };
-  
-}
+} // End namespace benchrisk.
 
 #endif
 
