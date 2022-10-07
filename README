@@ -7,7 +7,7 @@ src/main.cpp                   - main file.
 
 These files compile as-is with Metaspex, and they constitute the totality of the specification. Nothing more is needed.
 
-Output with Couchbase 7.1.0 on Ubuntu 20.04 x86_64, on a desktop-grade processor (see below for lscpu details):
+Output with Couchbase 7.1.0 on Ubuntu 20.04 x86_64, with a desktop-grade processor (see below for lscpu details):
 
 Storing 100 calculations, each of size ~17.6 MB (0.205 MB of calculation document and 17.4 MB in rows documents), for a total volume of ~1.76e+03 MB.
 Each matrix contains random floating point contents and has a size of 5000 x 250 (rows x columns).
