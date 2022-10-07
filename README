@@ -1,4 +1,4 @@
-This contains a few files used to benchmark the built-in matrix type (a typical use is for storing Risk/Counterparty results
+This contains a few files used to benchmark Metaspex's built-in matrix type (a typical use is for storing Risk/Counterparty results
 in the banking industry):
 
 include/benchrisk/ontology.hpp - contains the simple ontology header, using the built-in matrix type.
