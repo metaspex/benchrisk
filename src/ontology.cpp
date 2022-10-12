@@ -32,7 +32,7 @@ namespace benchrisk {
   void calculation::make(size_t rowsn, size_t colsn){
     matrix_r mat = make_rfr<matrix_type>();
     _matrix = &mat.get();
-    mat.get().build(rowsn, colsn);
+    mat.get().resize(rowsn, colsn);
   
     // Filling up the keys.
     for (auto& k: _extra_keys){ k = "FILLER"; }
